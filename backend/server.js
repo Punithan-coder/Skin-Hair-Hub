@@ -45,7 +45,14 @@ app.use("/api/appointments", require("./routes/appointmentRoutes"));
 app.use("/api/admin", require("./routes/adminRoutes"));
 app.use("/api/clinic", require("./routes/clinicRoutes"));
 
-// Sample route
-app.get("/", (req, res) => {
-  res.send("Backend server is running!");
+// --- Static File Serving (Production) ---
+const path = require('path');
+
+// Serve static files from the React app build folder
+app.use(express.static(path.join(__dirname, '../frontend/build')));
+
+// Any request that doesn't match an API route will serve the React app
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
 });
+
