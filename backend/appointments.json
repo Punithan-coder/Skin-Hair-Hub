@@ -1,0 +1,28 @@
+[
+  {
+    "id": "1776780297994",
+    "patientName": "athiban",
+    "email": "athibank3@gmail.com",
+    "phone": "9790647922",
+    "appointmentDate": "2026-04-22",
+    "message": "oiuytr",
+    "status": "Scheduled",
+    "createdAt": "2026-04-21T14:04:57.994Z",
+    "mode": "fallback-json",
+    "doctorName": "punith",
+    "assignedTime": "1030"
+  },
+  {
+    "id": "1776780985197",
+    "patientName": "Krithi",
+    "email": "kadhirsanmuthukumar1@gmail.com",
+    "phone": "9790647922",
+    "appointmentDate": "2026-04-22",
+    "message": "Hi DR",
+    "status": "Scheduled",
+    "createdAt": "2026-04-21T14:16:25.197Z",
+    "mode": "fallback-json",
+    "doctorName": "athiban",
+    "assignedTime": "10:30"
+  }
+]
